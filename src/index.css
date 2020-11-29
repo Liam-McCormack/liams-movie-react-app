@@ -37,6 +37,7 @@ header {
 
 .movie-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap; /* items go onto the next line on screen resize */
 }
 
@@ -51,7 +52,9 @@ header {
 }
 
 .movie img {
-  max-width: 100%;
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
 }
 
 .movie-info {
@@ -84,4 +87,23 @@ header {
 
 .movie:hover .movie-over {
   transform: translateY(0%);
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.tag.green {
+  color: rgb(16, 184, 16);
+}
+
+.tag.orange {
+  color: orange;
+}
+
+.tag.red {
+  color: red;
 }
